@@ -3,6 +3,8 @@ const total = years.reduce((acc, n) => acc + n, 0);
 console.log(total);
 
 
+
+
 var pilots = [
     {
       id: 10,
@@ -25,6 +27,11 @@ var pilots = [
       years: 22,
     }
   ];
-
+  // straightforward:
+//   var totalYears = pilots.reduce(function (accumulator, pilot) {
+//     return accumulator + pilot.years;
+//   }, 0);
+// arrow funcction
   const totalYears = pilots.reduce((acc, pilot) => acc + pilot.years, 0);
   console.log(totalYears);
+
