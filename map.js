@@ -14,3 +14,17 @@ const officers = [
     return officer.id
   });
  console.log(officersIds2);
+
+ function timer(){
+     let count = 0;
+     return function () {
+         count++;
+         return count;
+     }
+ }
+
+ const time = timer();
+ console.log(time());
+
+ const time2 = timer();
+ console.log(time2());
